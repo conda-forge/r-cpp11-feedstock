@@ -5,11 +5,9 @@ Home: https://github.com/r-lib/cpp11
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cpp11-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides a header only, C++11 interface to R's C interface. Compared to other approaches 'cpp11' strives to be safe against long jumps from the C API as well as C++ exceptions, conform to normal R function semantics and supports interaction with 'ALTREP' vectors.
-
-
 
 Current build status
 ====================

@@ -11,10 +11,15 @@ source:
     - {{ cran_mirror }}/src/contrib/cpp11_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cpp11/cpp11_{{ version }}.tar.gz
   sha256: 88a08a99891d69a7ee199364314c6556f955d1368d1f4f9d252df741e53c30ac
+  patches:
+    # Needed to use packages with compiler('r_clang') on Windows
+    # Can be removed with the next version
+    - 0001-Mark-r_vector-const_iterator-operator-as-const.patch
+    - 0002-Add-const-cast-to-fix-compilation.patch
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/

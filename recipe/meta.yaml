@@ -1,4 +1,4 @@
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cpp11_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cpp11/cpp11_{{ version }}.tar.gz
-  sha256: e9ff8eb1241958a33ae7c760d7043aaedbedbc63849e900e3c219ea5663f64da
+  sha256: 403ce0bf82358d237176053b0fb1e958cb6bfa4d0fb3555bf5801db6a6939b99
 
 build:
   merge_build_host: true  # [win]

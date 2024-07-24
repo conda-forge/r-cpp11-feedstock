@@ -13,6 +13,8 @@ source:
   sha256: f1a60e4971a86dbbcf6a16bbd739b59bb66d9c45d93cfd8dedc2a87e302598f1
 
 build:
+  # skip all to push new branch
+  skip: true
   merge_build_host: true  # [win]
   number: 1
   noarch: generic

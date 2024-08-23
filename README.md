@@ -32,14 +32,14 @@ Current release info
 Installing r-cpp11
 ==================
 
-Installing `r-cpp11` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `r-cpp11` from the `conda-forge/label/rcpp11_dev` channel can be achieved by adding `conda-forge/label/rcpp11_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/rcpp11_dev
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r-cpp11` can be installed with `conda`:
+Once the `conda-forge/label/rcpp11_dev` channel has been enabled, `r-cpp11` can be installed with `conda`:
 
 ```
 conda install r-cpp11
@@ -54,26 +54,26 @@ mamba install r-cpp11
 It is possible to list all of the versions of `r-cpp11` available on your platform with `conda`:
 
 ```
-conda search r-cpp11 --channel conda-forge
+conda search r-cpp11 --channel conda-forge/label/rcpp11_dev
 ```
 
 or with `mamba`:
 
 ```
-mamba search r-cpp11 --channel conda-forge
+mamba search r-cpp11 --channel conda-forge/label/rcpp11_dev
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search r-cpp11 --channel conda-forge
+mamba repoquery search r-cpp11 --channel conda-forge/label/rcpp11_dev
 
 # List packages depending on `r-cpp11`:
-mamba repoquery whoneeds r-cpp11 --channel conda-forge
+mamba repoquery whoneeds r-cpp11 --channel conda-forge/label/rcpp11_dev
 
 # List dependencies of `r-cpp11`:
-mamba repoquery depends r-cpp11 --channel conda-forge
+mamba repoquery depends r-cpp11 --channel conda-forge/label/rcpp11_dev
 ```
 
 
@@ -143,6 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@xhochy](https://github.com/xhochy/)
 

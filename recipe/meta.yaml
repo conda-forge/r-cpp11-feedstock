@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cpp11_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cpp11/cpp11_{{ version }}.tar.gz
-  sha256: 75dd64b7a5bfd92471cb71e0c22e24a7d7484fe0580d067cecadf288cc4334a3
+  sha256: 3d1ea475bc2dc2e9d4ee3ce41edeb96370f5417fbd77c48a085e5ed6f379afd4
 
 build:
   number: 0
